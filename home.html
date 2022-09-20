@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script>
+            console.log("init..."+document.getElementById("click_me"));
+            function fun1(){
+                console.log("fun 1.....");
+                document.getElementById("text1").setAttribute("value","from fun1 function");
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            <input type="text" value="" id="text1"/>
+            <input type="button" name="click_me" value="click me" id="click_me" onclick="fun1()"/>
+        </form>
+    </body>
+    <script>
+        console.log("init..."+document.getElementById("click_me"));
+        document.getElementById("click_me").setAttribute("value","click me 2");
+    </script>
+</html>
